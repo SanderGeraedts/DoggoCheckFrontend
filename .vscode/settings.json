@@ -1,0 +1,7 @@
+{
+    "prettier.tabWidth": 4,
+    "vetur.format.defaultFormatter.js": "prettier-eslint",
+    "editor.formatOnSave": true,
+    "html.format.enable": false,
+    "editor.formatOnPaste": true
+}

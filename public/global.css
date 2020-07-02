@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap");
+
+:root {
+    /* Color variables */
+    --color-orange: #fd5621;
+    --color-white: #ffffff;
+
+    /* Location colors */
+    --color-header: var(--color-orange);
+    --color-link: var(--color-orange);
+    --color-headings: var(--color-orange);
+    --color-logo: var(--color-white);
+
+    /* Fonts */
+    --font-main: "Montserrat", sans-serif;
+    --font-heading: "Galada", cursive;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+}
