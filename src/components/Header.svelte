@@ -1,6 +1,6 @@
 <script>
   import { Navigate } from "svelte-router-spa";
-  import { Wrapper } from "./index";
+  import Wrapper from "./Wrapper.svelte";
 </script>
 
 <style>
