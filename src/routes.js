@@ -1,4 +1,10 @@
-import { HomePage, LogInPage } from "./pages";
+import {
+    DogsPage,
+    HomePage,
+    LogInPage,
+    OverviewPage,
+    WeightPage
+} from "./pages";
 import { Layout } from "./layouts";
 
 const userIsLoggedIn = () => {
@@ -18,6 +24,33 @@ const routes = [
     {
         name: "login",
         component: LogInPage,
+        layout: Layout
+    },
+    {
+        name: "/overview",
+        component: OverviewPage,
+        onlyIf: {
+            guard: userIsLoggedIn,
+            redirect: "/login"
+        },
+        layout: Layout
+    },
+    {
+        name: "/weight",
+        component: WeightPage,
+        onlyIf: {
+            guard: userIsLoggedIn,
+            redirect: "/login"
+        },
+        layout: Layout
+    },
+    {
+        name: "/dogs",
+        component: DogsPage,
+        onlyIf: {
+            guard: userIsLoggedIn,
+            redirect: "/login"
+        },
         layout: Layout
     }
 ];
